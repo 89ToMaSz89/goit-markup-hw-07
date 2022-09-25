@@ -59,12 +59,6 @@ h2{
 
 /* *************** HEADER *************** */
 
-
-
-            /**************/
-            /* NAVIGATION */
-            /**************/
-
 .main-head-border-bottom{
     border-bottom: 1px solid var(--border-main-head-color);
 }
@@ -79,7 +73,7 @@ h2{
     background-color: var(--text-btn-color);
 }
 
-.main-head__logo{           /*Logo*/
+.main-head__logo{       /* ### Logo ### */
     margin: 0px;
     margin-right: 93px;
     
@@ -99,7 +93,7 @@ h2{
     color: var(--main-color);
 }
 
-.menu-navigation__list{           /*Menu navigation*/
+.menu-navigation__list{     /* ### Menu navigation ### */
     margin: 0px;
     display: flex;
     align-items: center;
@@ -131,8 +125,6 @@ h2{
     color: var(--secondary-color);
     text-decoration: none;
 
-                /* TRANSITION */
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -144,35 +136,31 @@ h2{
     color: var(--main-color);
 }
 
-            /* MAIN HEAD CONTACT */
-
-.main-head-contact{
+.contact{             /* ### Contact ### */
     margin: 0px;
     display: flex;
+    align-items: center;
+    gap: 30px;
    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
+
+    color: var(--third-color);
 }
 
-.main-head-contact-item:first-child{
-    margin-right: 30px;
-}
-
-.main-head-contact-item-link{
+.contact__link{
     color: var(--third-color);
 
     text-decoration: none;
-
-                    /* TRANSITION */
 
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-head-contact-icons{       /* SVG */
+.contact__icon{       /* SVG */
     margin-right: 10px;
 
     width: 16px;
@@ -180,26 +168,18 @@ h2{
 
     fill: var(--third-color);
 
-                    /* TRANSITION */
-
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-head-contact-item > a:hover .main-head-contact-icons,
-.main-head-contact-item-link:hover,
-.main-head-contact-item > a:focus .main-head-contact-icons,
-.main-head-contact-item-link:focus{
+.contact__item > a:hover .contact__icon,
+.contact__link:hover,
+.contact__item > a:focus .contact__icon,
+.contact__link:focus{
     color: var(--main-color);
     fill: var(--main-color);
-}
-
-            /* END MAIN HEAD CONTACT */
-
-            /******************/
-            /* END NAVIGATION */
-            /******************/       
+}     
 
 /* *************** END HEADER *************** */
 
