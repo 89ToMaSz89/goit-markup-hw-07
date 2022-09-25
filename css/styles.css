@@ -114,11 +114,7 @@ h2{
     margin-right: 364px;
 }
 
-/* .menu-navigation-item{
-    position: relative;
-} */
-
-.menu-navigation__item > .link-underline::after{     /* PSEUDO CLASS ::AFTER */
+.menu-navigation__item > .menu-navigation__link--underline::after{     /* PSEUDO CLASS ::AFTER */
         margin: 0px;
         margin-top: 36px;
 
