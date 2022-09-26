@@ -796,11 +796,7 @@ input:checked{
 
 /* *************** MAIN *************** */
 
-            /***********/
-            /* HEADING */
-            /***********/
-
-.heading{
+.heading{           /* ### Heading ### */
     margin: 0px;
 
     box-sizing: border-box; 
@@ -818,7 +814,7 @@ input:checked{
     background-position: center;
 }
 
-.heading-titlee{
+.heading__titlee{
     margin: 0px;
     padding-bottom: 30px;
 
@@ -832,7 +828,7 @@ input:checked{
     color: var(--text-btn-color);
 }
 
-.main-btn{
+.heading__btn{
     margin: 0px;
 
     box-sizing: border-box;
@@ -858,20 +854,14 @@ input:checked{
     border: none; 
 }
 
-.main-btn:hover,
-.main-btn:focus{
+.heading__btn:hover,
+.heading__btn:focus{
     cursor: pointer;
 }
 
-            /***************/
-            /* END HEADING */
-            /***************/
-
-            /***********/
-            /* SECTION */
-            /***********/
-
-.ssection{
+/***********************************************************/
+            
+.ssection{          /* ### Sections ### */
 
     box-sizing: border-box;
 
@@ -883,11 +873,14 @@ input:checked{
     background-color: var(--bg-color);
 }
 
-.ssection-list-our-strengths,
+.our-strengths__list,
 .ssection-list-our-job,
 .ssection-list-our-team{
     display: flex;
     align-items:center;
+    gap: 30px;
+
+    /* padding-top: 50px; */
 
     font-weight: 700;
     font-size: 14px;
@@ -897,7 +890,7 @@ input:checked{
     color: var(--secondary-color);
 }
 
-.ssection-list-our-strengths{
+.our-strengths__list--top-space{
     padding-top: 94px;
 }
 
@@ -907,7 +900,7 @@ input:checked{
     padding-top: 50px;
 }
 
-.ssection-list-our-strengths .ssection-list-item-paragraph{
+.our-strengths__list .our-strengths__paragraph{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
@@ -919,7 +912,7 @@ input:checked{
 
                     /* OUR STRENGTHS - ICONS SVG */
 
-.icons-our-strengths{
+.our-strengths__icon{
     margin-bottom: 30px;
 
     background-color: var(--bg-color);
