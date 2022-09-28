@@ -22,12 +22,12 @@
 
     <header class="main-head container">
       <a href="./index.html" class="main-head__logo">
-        <span class="main-head__logo--color">Web</span>Studio
+        Web<span class="main-head__logo--color">Studio</span>
       </a>
 
       <!--Menu navigation-->
 
-      <nav class="menu-navigation">
+      <nav class="navigation">
         <ul class="menu-navigation__list">
           <li class="menu-navigation__item">
             <a
@@ -47,12 +47,15 @@
         </ul>
       </nav>
 
-      <!--Contact-->
+      <!--MAIN HEAD CONTACT-->
 
-      <ul class="contact">
-        <li class="contact__item">
-          <a class="contact__link" href="mailto:info@devstudio.com">
-            <svg class="contact__icon">
+      <ul class="main-head-contact">
+        <li class="main-head-contact-item">
+          <a
+            class="main-head-contact-item-link"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="main-head-contact-icons">
               <use
                 href="./images/icons.svg#icon-envelope"
                 width="16"
@@ -63,9 +66,9 @@
           </a>
         </li>
 
-        <li class="contact__item">
-          <a class="contact__link" href="">
-            <svg class="contact__icon">
+        <li class="main-head-contact-item">
+          <a class="main-head-contact-item-link" href="">
+            <svg class="main-head-contact-icons">
               <use
                 href="./images/icons.svg#icon-smartphone"
                 width="16"
@@ -81,13 +84,13 @@
     <!--Main-->
 
     <main>
-      <section class="heading">
+      <section class="heading heading-overlay">
         <div class="container">
-          <h1 class="heading__titlee">
+          <h1 class="heading-titlee">
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="heading__btn" type="button" data-modal-open>
+          <button class="main-btn" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -95,11 +98,11 @@
 
       <!--SECTION NO.1 - OUR STRENGTHS-->
 
-      <section class="our-strengths">
+      <section>
         <div class="container">
-          <ul class="our-strengths__list our-strengths__list--top-space">
-            <li class="our-strengths__item">
-              <svg class="our-strengths__icon" width="270" height="120">
+          <ul class="ssection-list-our-strengths">
+            <li class="ssection-list-item">
+              <svg class="icons-our-strengths" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-antenna-1"
                   width="65.32"
@@ -109,13 +112,13 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="our-strengths__paragraph">
+              <p class="ssection-list-item-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="our-strengths__item">
-              <svg class="our-strengths__icon" width="270" height="120">
+            <li class="ssection-list-item">
+              <svg class="icons-our-strengths" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-clock-1"
                   width="65.32"
@@ -125,13 +128,13 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="our-strengths__paragraph">
+              <p class="ssection-list-item-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="our-strengths__item">
-              <svg class="our-strengths__icon" width="270" height="120">
+            <li class="ssection-list-item">
+              <svg class="icons-our-strengths" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-diagram-1"
                   width="65.32"
@@ -141,13 +144,13 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="our-strengths__paragraph">
+              <p class="ssection-list-item-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="our-strengths__item">
-              <svg class="our-strengths__icon" width="270" height="120">
+            <li class="ssection-list-item">
+              <svg class="icons-our-strengths" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-astronaut-1"
                   width="65.32"
@@ -157,7 +160,7 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="our-strengths__paragraph">
+              <p class="ssection-list-item-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -697,15 +700,17 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <svg class="modal-icons" data-modal-close>
-          <use
-            href="./images/icons.svg#icon-close-black-18dp-2-1"
-            width="18"
-            height="18"
-            x="5"
-            y="6"
-          ></use>
-        </svg>
+        <a>
+          <svg class="modal-icons" data-modal-close>
+            <use
+              href="./images/icons.svg#icon-close-black-18dp-2-1"
+              width="18"
+              height="18"
+              x="5"
+              y="6"
+            ></use>
+          </svg>
+        </a>
         <h3 class="modal-head">Zostaw swoje dane w formularzu poniżej</h3>
         <form class="modal-form">
           <label class="modal-form-name">
@@ -755,16 +760,22 @@
               class="modal-form-field-comment"
             ></textarea>
           </label>
-          <label class="form-text-accept">
+          <label class="form-check">
             <input
               type="checkbox"
               name="regulations"
-              class="form-text-accept-check"
+              class="form-accept-check"
             />
-            Oświadczam iż akceptuję&#160;
-            <a href="" class="form-text-regulations">Regulamin</a>
-            &#160;i&#160;
-            <a href="" class="form-text-regulations"> Politykę Prywatności</a>
+            <span class="form-text-check"
+              >Oświadczam iż akceptuję
+              <a href="" class="form-check-link">Regulamin</a> i
+              <a href="" class="form-check-link">Politykę Prywatności</a></span
+            >
+            <span class="form-accept-check-frame">
+              <svg class="form-check-icon">
+                <use href="./images/icons.svg#icon-Vector-3"></use>
+              </svg>
+            </span>
           </label>
           <button type="submit" class="form-send-btn">Wyślij</button>
         </form>
