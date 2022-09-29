@@ -589,11 +589,85 @@ h2{
 
                 /* FORM */
 
-.foter__item--collocation{
+                .foter-list-item-newsletter {
+                    position: relative;
+                    left: 78px;
+                    top: 0px;
+                }
+              
+                .foter-form {
+                    margin: 0px;
+                }
+              
+                .foter-form-email {
+                    position: absolute;
+                    left: 0px;
+                    top: 36px;
+                    padding: 15px 0px 15px 16px;
+              
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.25;
+              
+                    letter-spacing: 0.03em;
+              
+                    color: var(--contact-foter-color);
+              
+                    width: 358px;
+              
+                    background-color: var(--main-background-color);
+              
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 4px;
+                }
+              
+                .foter-form-btn {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+              
+                    margin-top: 20px;
+                    margin-left: 370px;
+                    padding: 10px 13px 10px 42px;
+              
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 1.875;
+              
+                    letter-spacing: 0.06em;
+              
+                    color: var(--text-btn-color);
+                    background-color: var(--main-color);
+              
+                    border: 0px;
+                    border-radius: 4px;
+              
+                    transition-property: box-shadow;
+                    transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                }
+              
+                .foter-form-btn:hover,
+                .foter-form-btn:focus {
+                    cursor: pointer;
+                    opacity: 0.5;
+              
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                }
+              
+                .foter-form-icon {
+                    width: 24px;
+                    height: 24px;
+              
+                    margin-left: 24px;
+              
+                    fill: var(--text-btn-color);
+                }
+
+/* .foter__item--collocation{
     position: relative;
+    padding-right: 330px;
     left: 78px;
-    margin: 0px;
-    /* padding-right: 350px; */
 }
 
 .foter__form{
@@ -630,7 +704,7 @@ h2{
 
     position: absolute;
 
-    margin-top: 20px;
+    margin-top: 29px;
     margin-left: 370px;
     padding: 10px 13px 10px 42px;
 
@@ -663,10 +737,10 @@ h2{
     width: 24px;
     height: 24px;
 
-    margin-left: 24px;
+    margin-left: 500px;
 
     fill: var(--text-btn-color);
-}
+} */
 
 /* ***************** END FOOTER *************************** */
 
