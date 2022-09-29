@@ -589,7 +589,7 @@ h2{
 
                 /* FORM */
 
-                .foter-list-item-newsletter {
+                /* .foter-list-item-newsletter {
                     position: relative;
                     left: 78px;
                     top: 0px;
@@ -662,9 +662,9 @@ h2{
                     margin-left: 24px;
               
                     fill: var(--text-btn-color);
-                }
+                } */
 
-/* .foter__item--collocation{
+.foter__item--collocation{
     position: relative;
     padding-right: 330px;
     left: 78px;
@@ -737,10 +737,10 @@ h2{
     width: 24px;
     height: 24px;
 
-    margin-left: 500px;
+    margin-left: 24px;
 
     fill: var(--text-btn-color);
-} */
+}
 
 /* ***************** END FOOTER *************************** */
 
