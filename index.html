@@ -605,12 +605,12 @@
               </ul>
             </address>
           </li>
-          <li class="foter-list-item">
-            <p class="foter-head">DOŁĄCZ DO NAS</p>
-            <ul class="foter-list-item-icons">
-              <li class="foter-list-item-icons-item">
+          <li class="foter__item">
+            <p class="foter__head">DOŁĄCZ DO NAS</p>
+            <ul class="foter__list foter__list--collocation-social">
+              <li class="foter__item">
                 <a href="https://www.instagram.com/">
-                  <svg class="foter-icons" width="44px" height="44px">
+                  <svg class="foter__icon" width="44px" height="44px">
                     <use
                       href="./images/icons.svg#icon-instagram"
                       width="20"
@@ -621,9 +621,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="foter-list-item-icons-item">
+              <li class="foter__item">
                 <a href="https://twitter.com/">
-                  <svg class="foter-icons" width="44px" height="44px">
+                  <svg class="foter__icon" width="44px" height="44px">
                     <use
                       href="./images/icons.svg#icon-twitter"
                       width="20"
@@ -634,9 +634,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="foter-list-item-icons-item">
+              <li class="foter__item">
                 <a href="https://www.facebook.com/">
-                  <svg class="foter-icons" width="44px" height="44px">
+                  <svg class="foter__icon" width="44px" height="44px">
                     <use
                       href="./images/icons.svg#icon-facebook"
                       width="20"
@@ -647,9 +647,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="foter-list-item-icons-item">
+              <li class="foter__item">
                 <a href="https://pl.linkedin.com/">
-                  <svg class="foter-icons" width="44px" height="44px">
+                  <svg class="foter__icon" width="44px" height="44px">
                     <use
                       href="./images/icons.svg#icon-linkedin2"
                       width="20"
@@ -665,9 +665,25 @@
 
           <!--FORM-->
 
-          <li class="foter-list-item-newsletter distance-top">
-            <form class="foter-form">
-              <label for="email-newsletter" class="foter-head"
+          <li class="foter__item foter__item--collocation">
+            <form class="foter__form">
+              <label for="email-newsletter" class="foter__head">
+                ZAPISZ SIĘ DO NEWSLETTERA
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email-newsletter"
+                placeholder="E-mail"
+                class="foter__field-email"
+              />
+            </form>
+            <button type="submit" class="foter__btn">Zapisz się</button>
+          </li>
+
+          <!-- <li class="foter__item foter__item--collocation">
+            <form class="foter__form">
+              <label for="email-newsletter" class="foter__head"
                 >ZAPISZ SIĘ DO NEWSLETTERA</label
               >
               <input
@@ -675,16 +691,16 @@
                 name="email"
                 id="email-newsletter"
                 placeholder="E-mail"
-                class="foter-form-email"
+                class="foter__field-email"
               />
-              <button type="submit" class="foter-form-btn">
+              <button type="submit" class="foter__btn">
                 Zapisz się
-                <svg class="foter-form-icon">
+                <svg class="foter__icon-form">
                   <use href="images/icons.svg#icon-icon-send" x="0" y="0"></use>
                 </svg>
               </button>
             </form>
-          </li>
+          </li> -->
         </ul>
       </div>
     </footer>

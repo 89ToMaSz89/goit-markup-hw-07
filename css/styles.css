@@ -476,13 +476,19 @@ h2{
     align-content: center;
 
     margin-right: 70px;
+    padding-top: 20px;
 }
 
 .foter__list--collocation{
     flex-direction: column;
     gap: 9px;
 
-    margin-top: 20px;
+    /* margin-top: 20px; */
+}
+
+.foter__list--collocation-social{
+    gap: 10px;
+    /* padding-top: 20px; */
 }
 
 .foter__item{
@@ -537,40 +543,68 @@ h2{
     color: var(--main-color);
 }
 
-.distance-top{
-    margin-top: 10px;
+.foter__head{           /* ### social media ### */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143px;
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+    
 }
 
-.foter-list-item-icons{
+.foter__icon{                       /* svg */
+    fill: var(--text-btn-color);
+
+    border-radius: 50%;
+    background-color: var(--bg-foter-icons);
+
+    transition-property: background-color;  /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foter__icon:hover{
+    background-color: var(--main-color);
+}
+
+.foter__item > a:focus .foter__icon{
+    background-color: var(--main-color);
+}
+
+
+/* .foter-list-item-icons{
     display: flex;
     align-items: center;
     justify-content: center;
 
     padding-top: 20px;
-}
+} */
 
-.foter-list-item-icons-item:not(:first-child){
+/* .foter-list-item-icons-item:not(:first-child){
     margin-left: 10px;
-}
+} */
 
 
 
                 /* FORM */
 
-.foter-list-item-newsletter{
+.foter__item--collocation{
     position: relative;
     left: 78px;
-    top: 0px;
-}
-
-.foter-form{
     margin: 0px;
+    /* padding-right: 350px; */
 }
 
-.foter-form-email{
+.foter__form{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.foter__field-email{
     position: absolute;
     left: 0px;
-    top: 36px;
+    top: 62px;
     padding: 15px 0px 15px 16px;
 
     font-weight: 400;
@@ -589,10 +623,12 @@ h2{
     border-radius: 4px;
 }
 
-.foter-form-btn{
+.foter__btn{
     display: flex;
     align-items: center;
     text-align: center;
+
+    position: absolute;
 
     margin-top: 20px;
     margin-left: 370px;
@@ -615,70 +651,21 @@ h2{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foter-form-btn:hover,
-.foter-form-btn:focus{
+.foter__btn:hover,
+.foter__btn:focus{
     cursor: pointer;
     opacity: 0.5;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.foter-form-icon{
+.foter__icon-form{
     width: 24px;
     height: 24px;
 
     margin-left: 24px;
 
     fill: var(--text-btn-color);
-}
-
-                /* END FORM */
-
-.foter-list-item:first-child{
-    margin-right: 70px;
-}
-
-.foter-icons{                       /* SVG */
-    fill: var(--text-btn-color);
-
-    border-radius: 50%;
-    background-color: var(--bg-foter-icons);
-
-                    /* TRANSITION */
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.foter-icons:hover{
-    background-color: var(--main-color);
-}
-
-.foter-list-item-icons-item > a:focus .foter-icons{
-    background-color: var(--main-color);
-}
-
-
-
-
-
-.foter-contact{
-    margin-top: 20px;
-}
-
-
-
-
-
-.foter-head{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143px;
-    letter-spacing: 0.03em;
-
-    color: var(--text-btn-color);
-    
 }
 
 /* ***************** END FOOTER *************************** */
