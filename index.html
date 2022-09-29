@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <!--Header-->
+    <!-- ### HEADER ### -->
 
     <header class="main-head container">
       <a href="./index.html" class="main-head__logo">
@@ -27,35 +27,32 @@
 
       <!--Menu navigation-->
 
-      <nav class="navigation">
-        <ul class="menu-navigation__list">
-          <li class="menu-navigation__item">
+      <nav class="header-navigation">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item">
             <a
               href="./index.html"
-              class="menu-navigation__link menu-navigation__link--underline"
+              class="header-navigation__link header-navigation__link--underline"
               >Agencja</a
             >
           </li>
-          <li class="menu-navigation__item">
-            <a class="menu-navigation__link" href="./portfolio.html"
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
-          <li class="menu-navigation__item">
-            <a href="" class="menu-navigation__link">Kontakt</a>
+          <li class="header-navigation__item">
+            <a href="" class="header-navigation__link">Kontakt</a>
           </li>
         </ul>
       </nav>
 
-      <!--MAIN HEAD CONTACT-->
+      <!--Header contact-->
 
-      <ul class="main-head-contact">
-        <li class="main-head-contact-item">
-          <a
-            class="main-head-contact-item-link"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="main-head-contact-icons">
+      <ul class="header-contact">
+        <li class="header-contact__item">
+          <a class="header-contact__link" href="mailto:info@devstudio.com">
+            <svg class="header-contact__icon">
               <use
                 href="./images/icons.svg#icon-envelope"
                 width="16"
@@ -66,9 +63,9 @@
           </a>
         </li>
 
-        <li class="main-head-contact-item">
-          <a class="main-head-contact-item-link" href="">
-            <svg class="main-head-contact-icons">
+        <li class="header-contact__item">
+          <a class="header-contact__link" href="">
+            <svg class="header-contact__icon">
               <use
                 href="./images/icons.svg#icon-smartphone"
                 width="16"
@@ -81,16 +78,16 @@
       </ul>
     </header>
 
-    <!--Main-->
+    <!-- ### MAIN ### -->
 
     <main>
       <section class="heading heading-overlay">
         <div class="container">
-          <h1 class="heading-titlee">
+          <h1 class="heading__title">
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="main-btn" type="button" data-modal-open>
+          <button class="heading__btn" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -98,11 +95,11 @@
 
       <!--SECTION NO.1 - OUR STRENGTHS-->
 
-      <section>
+      <section class="our-strengths">
         <div class="container">
-          <ul class="ssection-list-our-strengths">
-            <li class="ssection-list-item">
-              <svg class="icons-our-strengths" width="270" height="120">
+          <ul class="our-strengths__list our-strengths__list--distance">
+            <li class="our-strengths__item">
+              <svg class="our-strengths__icon" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-antenna-1"
                   width="65.32"
@@ -112,13 +109,13 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="ssection-list-item-paragraph">
+              <p class="our-strengths__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="ssection-list-item">
-              <svg class="icons-our-strengths" width="270" height="120">
+            <li class="our-strengths__item">
+              <svg class="our-strengths__icon" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-clock-1"
                   width="65.32"
@@ -128,13 +125,13 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="ssection-list-item-paragraph">
+              <p class="our-strengths__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="ssection-list-item">
-              <svg class="icons-our-strengths" width="270" height="120">
+            <li class="our-strengths__item">
+              <svg class="our-strengths__icon" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-diagram-1"
                   width="65.32"
@@ -144,13 +141,13 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="ssection-list-item-paragraph">
+              <p class="our-strengths__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="ssection-list-item">
-              <svg class="icons-our-strengths" width="270" height="120">
+            <li class="our-strengths__item">
+              <svg class="our-strengths__icon" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-astronaut-1"
                   width="65.32"
@@ -160,7 +157,7 @@
                 ></use>
               </svg>
               LOREM IPSUM
-              <p class="ssection-list-item-paragraph">
+              <p class="our-strengths__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -171,42 +168,44 @@
 
       <!--SECTION NO.2 - OUR JOB-->
 
-      <section class="ssection">
+      <section class="our-job ssection">
         <div class="container">
           <h2>Czym się zajmujemy</h2>
-          <ul class="ssection-list-our-job">
-            <li class="ssection-list-item">
+          <ul class="our-job__list our-job__list--distance">
+            <li class="our-job__item">
               <img
-                class="ssection-picture"
+                class="our-job__picture"
                 src="images/imgA.jpg"
                 alt="Websites programming"
                 width="370"
                 height="294"
               />
-              <div class="text-box">
-                <p class="text-box-applications">APLIKACJE KOMPUTEROWE</p>
+              <div class="our-job__text-box">
+                <p class="our-job__name">APLIKACJE KOMPUTEROWE</p>
               </div>
             </li>
-            <li class="ssection-list-item">
+            <li class="our-job__item">
               <img
+                class="our-job__picture"
                 src="images/imgB.jpg"
                 alt="Positioning of websites"
                 width="370"
                 height="294"
               />
-              <div class="text-box">
-                <p class="text-box-applications">APLIKACJE MOBILNE</p>
+              <div class="our-job__text-box">
+                <p class="our-job__name">APLIKACJE MOBILNE</p>
               </div>
             </li>
-            <li class="ssection-list-item">
+            <li class="our-job__item">
               <img
+                class="our-job__picture"
                 src="images/imgC.jpg"
                 alt="Computer graphics"
                 width="370"
                 height="294"
               />
-              <div class="text-box">
-                <p class="text-box-applications">ROZWIĄZANIA GRAFICZNE</p>
+              <div class="our-job__text-box">
+                <p class="our-job__name">ROZWIĄZANIA GRAFICZNE</p>
               </div>
             </li>
           </ul>
@@ -215,26 +214,26 @@
 
       <!--SECTION NO.3 - OUR TEAM-->
 
-      <section class="ssection ssection-overlay">
+      <section class="our-team ssection ssection-overlay">
         <div class="container">
           <h2>Nasz zespół</h2>
-          <ul class="ssection-list-our-team">
+          <ul class="our-team__list our-team__list--distance">
             <!--FIRST CARD-->
 
-            <li class="ssection-card-person">
+            <li class="our-team__item">
               <img
                 src="images/imgD.jpg"
                 alt="John Doe. Product Designer"
                 width="270"
                 height="260"
               />
-              <p class="ssection-card-person-name">John Doe</p>
-              <p class="ssection-card-person-position">Product Designer</p>
+              <p class="our-team__name">John Doe</p>
+              <p class="our-team__workplace">Product Designer</p>
 
-              <ul class="ssection-card-person-icons">
-                <li class="ssection-card-person-icons-item">
+              <ul class="our-team__list our-team__list--position">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.instagram.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-instagram"
                         width="20"
@@ -245,9 +244,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://twitter.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-twitter"
                         width="20"
@@ -258,9 +257,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.facebook.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-facebook"
                         width="20"
@@ -271,9 +270,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://pl.linkedin.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-linkedin2"
                         width="20"
@@ -289,20 +288,20 @@
 
             <!--SECOND CARD-->
 
-            <li class="ssection-card-person">
+            <li class="our-team__item">
               <img
                 src="images/imgE.jpg"
                 alt="John Doe. Frontend Developer"
                 width="270"
                 height="260"
               />
-              <p class="ssection-card-person-name">John Doe</p>
-              <p class="ssection-card-person-position">Frontend Developer</p>
+              <p class="our-team__name">John Doe</p>
+              <p class="our-team__workplace">Frontend Developer</p>
 
-              <ul class="ssection-card-person-icons">
-                <li class="ssection-card-person-icons-item">
+              <ul class="our-team__list our-team__list--position">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.instagram.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-instagram"
                         width="20"
@@ -313,9 +312,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://twitter.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-twitter"
                         width="20"
@@ -326,9 +325,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.facebook.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-facebook"
                         width="20"
@@ -339,9 +338,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://pl.linkedin.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-linkedin2"
                         width="20"
@@ -357,20 +356,20 @@
 
             <!--THIRD CARD-->
 
-            <li class="ssection-card-person">
+            <li class="our-team__item">
               <img
                 src="images/imgF.jpg"
                 alt="John Doe. Marketing"
                 width="270"
                 height="260"
               />
-              <p class="ssection-card-person-name">John Doe</p>
-              <p class="ssection-card-person-position">Marketing</p>
+              <p class="our-team__name">John Doe</p>
+              <p class="our-team__workplace">Marketing</p>
 
-              <ul class="ssection-card-person-icons">
-                <li class="ssection-card-person-icons-item">
+              <ul class="our-team__list our-team__list--position">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.instagram.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-instagram"
                         width="20"
@@ -381,9 +380,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://twitter.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-twitter"
                         width="20"
@@ -394,9 +393,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.facebook.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-facebook"
                         width="20"
@@ -407,9 +406,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://pl.linkedin.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-linkedin2"
                         width="20"
@@ -425,20 +424,20 @@
 
             <!--FOURTH CARD-->
 
-            <li class="ssection-card-person">
+            <li class="our-team__item">
               <img
                 src="images/imgG.jpg"
                 alt="John Doe. UI Designer"
                 width="270"
                 height="260"
               />
-              <p class="ssection-card-person-name">John Doe</p>
-              <p class="ssection-card-person-position">UI Designer</p>
+              <p class="our-team__name">John Doe</p>
+              <p class="our-team__workplace">UI Designer</p>
 
-              <ul class="ssection-card-person-icons">
-                <li class="ssection-card-person-icons-item">
+              <ul class="our-team__list our-team__list--position">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.instagram.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-instagram"
                         width="20"
@@ -449,9 +448,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://twitter.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-twitter"
                         width="20"
@@ -462,9 +461,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://www.facebook.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-facebook"
                         width="20"
@@ -475,9 +474,9 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ssection-card-person-icons-item">
+                <li class="our-team__item our-team__item--border">
                   <a href="https://pl.linkedin.com/">
-                    <svg class="icons">
+                    <svg class="our-team__icon">
                       <use
                         href="./images/icons.svg#icon-linkedin2"
                         width="20"
