@@ -55,6 +55,15 @@ h2{
 
     margin: 0 auto; 
 }
+
+.ssection{
+
+    box-sizing: border-box;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
             /* ................. */
 
 /* ********************* HEADER ********************* */
@@ -164,7 +173,7 @@ h2{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact__icon{       /* SVG */
+.header-contact__icon{       /* svg */
     margin-right: 10px;
 
     width: 16px;
@@ -172,9 +181,7 @@ h2{
 
     fill: var(--third-color);
 
-                    /* TRANSITION */
-
-    transition-property: fill;
+    transition-property: fill;      /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -482,13 +489,11 @@ h2{
 .foter__list--collocation{
     flex-direction: column;
     gap: 9px;
-
-    /* margin-top: 20px; */
 }
 
 .foter__list--collocation-social{
     gap: 10px;
-    /* padding-top: 20px; */
+    margin: 0px;
 }
 
 .foter__item{
@@ -572,101 +577,10 @@ h2{
     background-color: var(--main-color);
 }
 
-
-/* .foter-list-item-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding-top: 20px;
-} */
-
-/* .foter-list-item-icons-item:not(:first-child){
-    margin-left: 10px;
-} */
-
-
-
-                /* FORM */
-
-                /* .foter-list-item-newsletter {
-                    position: relative;
-                    left: 78px;
-                    top: 0px;
-                }
-              
-                .foter-form {
-                    margin: 0px;
-                }
-              
-                .foter-form-email {
-                    position: absolute;
-                    left: 0px;
-                    top: 36px;
-                    padding: 15px 0px 15px 16px;
-              
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 1.25;
-              
-                    letter-spacing: 0.03em;
-              
-                    color: var(--contact-foter-color);
-              
-                    width: 358px;
-              
-                    background-color: var(--main-background-color);
-              
-                    border: 1px solid rgba(255, 255, 255, 0.3);
-                    border-radius: 4px;
-                }
-              
-                .foter-form-btn {
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-              
-                    margin-top: 20px;
-                    margin-left: 370px;
-                    padding: 10px 13px 10px 42px;
-              
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 1.875;
-              
-                    letter-spacing: 0.06em;
-              
-                    color: var(--text-btn-color);
-                    background-color: var(--main-color);
-              
-                    border: 0px;
-                    border-radius: 4px;
-              
-                    transition-property: box-shadow;
-                    transition-duration: 250ms;
-                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                }
-              
-                .foter-form-btn:hover,
-                .foter-form-btn:focus {
-                    cursor: pointer;
-                    opacity: 0.5;
-              
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                }
-              
-                .foter-form-icon {
-                    width: 24px;
-                    height: 24px;
-              
-                    margin-left: 24px;
-              
-                    fill: var(--text-btn-color);
-                } */
-
-.foter__item--collocation{
+.foter__item--collocation{      /* ### form - newsletter ### */
     position: relative;
-    padding-right: 330px;
+    padding-right: 350px;
+    margin-top: 0px;
     left: 78px;
 }
 
@@ -748,27 +662,20 @@ h2{
 /* ************************* PORTFOLIO.HTML ************************* */
 /* ************************************************************** */
 
-/* *************** MAIN *************** */
-
-            /********/
-            /* MENU */
-            /********/
-
-.menu{
+/* ********************* MAIN ***************************** */
+          
+.menu__list{              /* ### menu ### */
     margin: 0px;
 
     box-sizing: border-box; 
     display: flex;
     align-items: center;
+    gap: 8px;
 
     padding-left: 295px;
 }
 
-.menu >.menu-item:not(:first-child){
-    margin-left: 8px;
-}
-
-.menu-btn{
+.menu__btn{
     margin: 0px;
 
     padding: 6px 22px;
@@ -784,15 +691,13 @@ h2{
 
     color: var(--secondary-color);
 
-                    /* TRANSITION */
-
-    transition-property: background-color, color, box-shadow;
+    transition-property: background-color, color, box-shadow;   /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-btn:hover,
-.menu-btn:focus{
+.menu__btn:hover,
+.menu__btn:focus{
     background-color: var(--main-color);
     color: var(--text-btn-color);
 
@@ -803,15 +708,7 @@ h2{
     cursor: pointer;
 }
 
-            /************/
-            /* END MENU */
-            /************/
-
-            /************/
-            /* PROJECTS */
-            /************/
-
-.picture-card{
+.project-card__picture{          /* ### projects ### */
     margin: 0px;
     padding: 0px;
 
@@ -831,12 +728,12 @@ h2{
     margin-top: 50px;
 }
 
-.project-card > .project-card-item{
+.project-card > .project-card__item{
     border-bottom: 1px solid var(--border-card-color);
     background-color: var(--text-btn-color);
 }
 
- .project-name{
+ .project-card__name{
     margin: 0px;
 
     padding-top: 20px;
@@ -851,7 +748,7 @@ h2{
     color: var(--secondary-color);
 }
 
-.category-name{
+.project-card__category{
     margin: 4px 0px 20px 24px;
 
     font-weight: 400;
@@ -863,22 +760,20 @@ h2{
     color: var(--third-color);
 } 
 
-.project-card-item{
+.project-card__item{
     
-                    /* TRANSITION */
-
-    transition-property: box-shadow;
+    transition-property: box-shadow;    /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card-item:hover{
+.project-card__item:hover{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.description-card{
+.project-card__description-box{
     position: absolute;
     top: 0px;
     margin: 0px;
@@ -887,12 +782,12 @@ h2{
 
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);    /* TRANSFORMATION */
+    transform: translateY(100%);    /* transformation */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.description-card-text{
+.project-card__description{
 
     font-weight: 400;
     font-size: 18px;
@@ -903,24 +798,14 @@ h2{
     color: var(--text-btn-color);
 }
 
-.picture-card:hover .description-card,      /* TRANSFORMATION */
-.project-card-item:hover .description-card{
+.project-card__picture:hover .project-card__description-box,      /* TRANSFORMATION */
+.project-card__item:hover .project-card__description-box{
     transform: translateY(0);
 }
 
-            /****************/
-            /* END PROJECTS */
-            /****************/
+/* ********************* END MAIN ************************** */
 
-/* *************** END MAIN *************** */
-/* ########################################### */
-/* *************** FOOTER *************** */
-
-
-
-/* *************** END FOOTER *************** */
-
-/* *************** WINDOW MODAL *************** */
+/* ******************** WINDOW MODAL *********************** */
 
 .backdrop{
     position: fixed;
@@ -932,7 +817,7 @@ h2{
 
     background-color: var(--bg-color-modal);
 
-    transform: translateY(0);       /* TRANSFORMATION */
+    transform: translateY(0);       /* transformation */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -942,7 +827,7 @@ h2{
     opacity: 1;
     pointer-events: auto;
 
-    transform: translateY(-100%);       /* TRANSFORMATION */
+    transform: translateY(-100%);       /* transformation */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -963,12 +848,12 @@ h2{
     border-radius: 4px;
 }
 
-.modal > a:hover .modal-icons{
+.modal > a:hover .modal__icon{
     fill: var(--main-color);
     border-color: var(--main-color);
 }
 
-.modal-icons{
+.modal__icon{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -987,7 +872,7 @@ h2{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-head{
+.modal__head{
     margin-top: 40px;
 
     font-weight: 700;
@@ -999,9 +884,7 @@ h2{
     color: var(--secondary-color);
 }
 
-                /* FORM */
-
-.modal-form{
+.modal-form{           /* ### form ### */
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -1010,7 +893,7 @@ h2{
     gap: 10px;
 }
 
-.modal-form-name{
+.modal-form__name{
     display: flex;
     flex-direction: column;
     gap: 4px;   
@@ -1024,7 +907,7 @@ h2{
     color: var(--third-color);
 }
 
-.modal-form-input{
+.modal-form__field{
     width: 448px;
    height: 40px;
 
@@ -1040,7 +923,7 @@ h2{
    outline: none;
 }
 
-.modal-form-icons{
+.modal-form__icon{
     position: absolute;
 
     width: 18px;
@@ -1056,7 +939,7 @@ h2{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-field-comment{
+.modal-form__field--border{
     margin: 0px;
     resize: none;
     padding: 12px 16px;
@@ -1069,21 +952,21 @@ h2{
     outline: none;
 }
 
-.modal-form-name > a:hover .modal-form-icons,
-.modal-form-name > a:hover .modal-form-input,
-.modal-form-field-comment:hover{
+.modal-form__name > a:hover .modal-form__icon,
+.modal-form__name > a:hover .modal-form__field,
+.modal-form__field:hover{
     border-color: var(--main-color);
     fill: var(--main-color);
 }
 
-.modal-form-name > a:focus-within .modal-form-icons,
-.modal-form-name > a:focus-within .modal-form-input,
-.modal-form-field-comment:focus-within{
+.modal-form__name > a:focus-within .modal-form-icons,
+.modal-form__name > a:focus-within .modal-form-input,
+.modal-form__field:focus-within{
     border-color: var(--main-color);
     fill: var(--main-color);
 }
 
-.form-check{                /*checkbox*/
+.modal-form__chack-name{                /*checkbox*/
     position: relative;
     left: 13px;
     top: 10px;
@@ -1102,22 +985,22 @@ h2{
     overflow: hidden;
 }
 
-.form-accept-check{
+.modal-form__check{
     margin: 0px;
     padding: 0px;
 
     opacity: 0;
 }
 
-.form-text-check{
+.modal-form__clause{
     margin-left: 7px;
 }
 
-.form-check-link{
+.modal-form__link{
     color: var(--main-color);
 }
 
-.form-accept-check-frame{
+.modal-form__check-frame{
     position: absolute;
     padding-top: 2px;
 
@@ -1128,7 +1011,7 @@ h2{
     border-radius: 2px;
 }
 
-.form-check-icon{
+.modal-form__check-icon{
     position: absolute;
 
     width: 11px;
@@ -1139,14 +1022,14 @@ h2{
     transform: translateX(-200%);
 }
 
-.form-accept-check:checked ~ .form-accept-check-frame > .form-check-icon,
-.form-accept-check:checked ~ .form-accept-check-frame{
+.modal-form__check:checked ~ .modal-form__check-frame > .modal-form__check-icon,
+.modal-form__check:checked ~ .modal-form__check-frame{
     transform: translateX(0);
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
 
-.form-send-btn{
+.modal-form__btn{
     position: absolute;
     left: 164px;
     top: 420px;
@@ -1172,68 +1055,9 @@ h2{
     cursor: pointer;
 }
 
-.form-send-btn:hover,
-.form-send-btn:focus{
+.modal-form__btn:hover,
+.modal-form__btn:focus{
     opacity: 0.5;
 }
 
-                /* END FORM */
-
-/* *************** END WINDOW MODAL *************** */
-
-/* ########################################### */
-
-
-/* ************************************************************** */
-/* ************************* INDEX.HTML ************************* */
-/* ************************************************************** */
-
-.ssection{
-
-    box-sizing: border-box;
-
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-
-
-           
-
-
-.ssection-list-our-team,
-.ssection-list-our-clients{
-    padding-top: 50px;
-}
-
-
-
-                    
-
-/* ************************************************************ */
-
-            /* SECTION NO.2 - OUR JOB */
-
-
-
-/* ************************************************************ */
-
-            /* SECTION NO.3 - OUR TEAM */
-
-
-
-/* ************************************************************ */         
-
-            /* SECTION NO.4 - OUR CLIENTS */
-
-
-
-            /* END OUR CLIENTS - ICONS SVG */
-
-            /***************/
-            /* END SECTION */
-            /***************/
-
-/* ************************************ */
-/* *************** END MAIN *********** */
-/* ************************************ */
+/* ******************* END WINDOW MODAL ******************* */
