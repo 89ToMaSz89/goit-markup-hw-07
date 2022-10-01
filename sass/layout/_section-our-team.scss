@@ -1,0 +1,81 @@
+/* ************** SECTION NO.3 - OUR TEAM **************** */
+
+.our-team__item{
+    margin: 0px;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--text-btn-color);
+}
+
+.our-team__list--distance{
+    padding-top: 50px;
+}
+
+.our-team__name{
+    margin: 0px;
+    margin-top: 30px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-team__workplace{
+    margin: 0px;
+
+    padding-top: 10px;
+    padding-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+}
+
+.our-team__list--position{      /* svg */
+    gap: 10px;
+    margin: 0px 32px 30px 32px;
+}
+
+.our-team__item--border{
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+.our-team__icon{
+    fill: var(--icon-color);
+
+    border-radius: 50%;
+
+    width: 44px;
+    height: 44px;
+
+    transition-property: background-color, fill;    /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team__icon:hover{
+    background-color: var(--main-color);
+    fill: var(--text-btn-color);
+}
+
+.our-team__item > a:focus .icons{
+    background-color: var(--main-color);
+    fill: var(--text-btn-color);
+}
+
+/* ************ END SECTION NO.3 - OUR TEAM *************** */

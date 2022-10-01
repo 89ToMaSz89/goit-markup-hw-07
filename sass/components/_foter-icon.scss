@@ -1,0 +1,18 @@
+.foter__icon{                       /* svg */
+    fill: var(--text-btn-color);
+
+    border-radius: 50%;
+    background-color: var(--bg-foter-icons);
+
+    transition-property: background-color;  /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foter__icon:hover{
+    background-color: var(--main-color);
+}
+
+.foter__item > a:focus .foter__icon{
+    background-color: var(--main-color);
+}

@@ -1,0 +1,51 @@
+.foter-overlay{
+    background-color: var(--main-background-color);
+}
+
+.foter{
+    box-sizing: border-box;
+    
+    padding: 60px 0px;
+}
+
+.foter__list{
+    display: flex;
+    align-content: center;
+
+    margin-right: 70px;
+    padding-top: 20px;
+}
+
+.foter__list--collocation{
+    flex-direction: column;
+    gap: 9px;
+}
+
+.foter__list--collocation-social{
+    gap: 10px;
+    margin: 0px;
+}
+
+.foter__item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+
+    margin-top: 9px;
+}
+
+.foter__head{           /* ### social media ### */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143px;
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+    
+}

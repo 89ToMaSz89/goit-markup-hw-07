@@ -1,0 +1,19 @@
+.foter__link{           /* contact links */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: var(--contact-foter-color);
+
+    transition-property: color;     /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foter__link:hover,
+.foter__link:focus{
+    color: var(--main-color);
+}
