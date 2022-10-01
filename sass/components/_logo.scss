@@ -9,16 +9,13 @@
 
     letter-spacing: 0.03em;
 
-    color: var(--secondary-color);
+    color: $secondaryColor;
     text-decoration: none;
 }
 
 .main-head__logo--color{
-    color: var(--main-color);
+    color: $mainColor;
 }
-
-/* ********************* FOOTER *************************** */
-
 
 .foter__logo{           /* ### Logo ### */
     
@@ -35,5 +32,5 @@
 }
 
 .foter__logo--color{
-    color: var(--main-color);
+    color: $mainColor;
 }

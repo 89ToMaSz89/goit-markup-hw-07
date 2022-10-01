@@ -15,15 +15,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden{
-    visibility: hidden;
-    opacity: 1;
-    pointer-events: auto;
 
-    transform: translateY(-100%);       /* transformation */
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal{
     position: absolute;
@@ -42,8 +34,8 @@
 }
 
 .modal > a:hover .modal__icon{
-    fill: var(--main-color);
-    border-color: var(--main-color);
+    fill: $mainColor;
+    border-color: $mainColor;
 }
 
 .modal__icon{
@@ -74,7 +66,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--secondary-color);
+    color: $secondaryColor;
 }
 
 .modal-form{           /* ### form ### */
@@ -97,7 +89,7 @@
 
     letter-spacing: 0.01em;
 
-    color: var(--third-color);
+    color: $thirdColor;
 }
 
 .modal-form__field{
@@ -125,7 +117,7 @@
     margin-top: 12px;
     margin-left: 15px;
 
-    fill: var(--secondary-color);
+    fill: $secondaryColor;
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -148,15 +140,15 @@
 .modal-form__name > a:hover .modal-form__icon,
 .modal-form__name > a:hover .modal-form__field,
 .modal-form__field:hover{
-    border-color: var(--main-color);
-    fill: var(--main-color);
+    border-color: $mainColor;
+    fill: $mainColor;
 }
 
 .modal-form__name > a:focus-within .modal-form-icons,
 .modal-form__name > a:focus-within .modal-form-input,
 .modal-form__field:focus-within{
-    border-color: var(--main-color);
-    fill: var(--main-color);
+    border-color: $mainColor;
+    fill: $mainColor;
 }
 
 .modal-form__chack-name{                /*checkbox*/
@@ -173,7 +165,7 @@
 
     letter-spacing: 0.03em;
 
-    color: var(--third-color);
+    color: $thirdColor;
 
     overflow: hidden;
 }
@@ -190,7 +182,7 @@
 }
 
 .modal-form__link{
-    color: var(--main-color);
+    color: $mainColor;
 }
 
 .modal-form__check-frame{
@@ -218,8 +210,8 @@
 .modal-form__check:checked ~ .modal-form__check-frame > .modal-form__check-icon,
 .modal-form__check:checked ~ .modal-form__check-frame{
     transform: translateX(0);
-    background-color: var(--main-color);
-    border-color: var(--main-color);
+    background-color: $mainColor;
+    border-color: $mainColor;
 }
 
 .modal-form__btn{
@@ -231,7 +223,7 @@
     
     display: flex;
     
-    background-color: var(--main-color);
+    background-color: $mainColor;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

@@ -1,0 +1,24 @@
+.project-card__description-box{
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    padding: 49px 45px 49px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);    /* transformation */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card__description{
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.555;
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+}

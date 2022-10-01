@@ -11,19 +11,26 @@
     line-height: 1.143;
     letter-spacing: 0.02em;
 
-    color: var(--third-color);
+    color: $thirdColor;
     text-decoration: none;
 }
 
 .header-contact__link{
-    color: var(--third-color);
+    color: $thirdColor;
     text-decoration: none;
 
-    /* TRANSITION */
-
-    transition-property: color;
+    transition-property: color;     /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $mainColor;
+
+        & .header-contact__icon{
+            fill: $mainColor;
+        }
+    }
 }
 
 .header-contact__icon{       /* svg */
@@ -32,17 +39,10 @@
     width: 16px;
     height: 12px;
 
-    fill: var(--third-color);
+    fill: $thirdColor;
 
     transition-property: fill;      /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact__item > a:hover .header-contact__icon,
-.header-contact__link:hover,
-.header-contact__item > a:focus .header-contact__icon,
-.header-contact__link:focus{
-    fill: var(--main-color);
-    color: var(--main-color);
-}

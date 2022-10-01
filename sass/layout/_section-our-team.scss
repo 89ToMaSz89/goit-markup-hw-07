@@ -41,7 +41,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--third-color);
+    color: $thirdColor;
 }
 
 .our-team__list--position{      /* svg */
@@ -69,12 +69,12 @@
 }
 
 .our-team__icon:hover{
-    background-color: var(--main-color);
+    background-color: $mainColor;
     fill: var(--text-btn-color);
 }
 
 .our-team__item > a:focus .icons{
-    background-color: var(--main-color);
+    background-color: $mainColor;
     fill: var(--text-btn-color);
 }
 

@@ -1,0 +1,17 @@
+/* *************** VARIABLES *************** */
+:root {
+  --main-font: "Roboto", "Relaway", sans-serif;
+  --text-btn-color: #ffffff;
+  --main-background-color: #2f303a;
+  --border-card-color: #eeeeee;
+  --border-main-head-color: #ececec;
+  --contact-foter-color: rgba(255, 255, 255, 0.6);
+  --bg-color: #f5f4fa;
+  --icon-color: #AFB1B8;
+  --bg-color-modal: rgba(0, 0, 0, 0.2);
+  --bg-foter-icons: rgba(255, 255, 255, 0.1);
+  --border-modal-color: rgba(0, 0, 0, 0.1);
+  --text-color: rgba(47, 48, 58, 0.8);
+}
+
+/* ########################################### *//*# sourceMappingURL=variables.css.map */

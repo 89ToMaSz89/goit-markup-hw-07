@@ -1,4 +1,4 @@
-@import "./utils/vars";
+@import "./utils/variables";
 @import "./base/common";
 @import "./components/logo";
 @import "./base/container";
@@ -12,9 +12,15 @@
 @import "./layout/section-our-team";
 @import "./layout/section-our-clients";
 @import "./layout/footer";
-@import "./components/foter-link";
-@import "./components/foter-icon";
+@import "./components/footer-link";
+@import "./components/footer-icon";
 @import "./components/footer-form";
-@import "./components/menu";
+@import "./layout/menu";
 @import "./layout/window-modal";
 @import "./layout/projects";
+@import "./utils/is-hidden";
+@import "./components/menu-btn";
+@import "./components/project-card";
+@import "./components/project-card-description-box";
+@import "./components/footer-btn";
+@import "./components/header-navigation-link";

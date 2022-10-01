@@ -18,13 +18,13 @@
 }
 
 .our-clients__icon:hover{
-    fill: var(--main-color);
-    border-color: var(--main-color);
+    fill: $mainColor;
+    border-color: $mainColor;
 }
 
 .our-clients__item > a:focus .our-clients__icon{
-    fill: var(--main-color);
-    border-color: var(--main-color);
+    fill: $mainColor;
+    border-color: $mainColor;
 }
 
 .our-clients__list--distance{

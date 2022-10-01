@@ -2,7 +2,7 @@
 
 body{
     font-family: var(--main-font);
-    color: var(--secondary-color);
+    color: $secondaryColor;
     position: relative;
 }
 
@@ -24,6 +24,7 @@ h2{
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--secondary-color);
+    color: $secondaryColor;
 }
-            /* ................. */
+
+/* ************************************************ */

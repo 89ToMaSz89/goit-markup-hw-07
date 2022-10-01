@@ -14,30 +14,3 @@
     margin-right: 364px;
 }
 
-.header-navigation__item > .header-navigation__link--underline::after{     /* PSEUDO CLASS ::AFTER */
-        margin: 0px;
-        margin-top: 36px;
-
-        content: "";
-        background-color: var(--main-color);
-        padding: 2px 26.5px;
-        border-radius: 2px;
-
-        display: block;
-        position: absolute;
-}
-
-.header-navigation__list .header-navigation__link{
-    color: var(--secondary-color);
-    text-decoration: none;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-navigation__list .header-navigation__link:hover,
-.header-navigation__list .header-navigation__link:focus,
-.header-navigation__list .header-navigation__link:active{
-    color: var(--main-color);
-}
