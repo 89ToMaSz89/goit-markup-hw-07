@@ -1,12 +1,7 @@
 /* *************** VARIABLES *************** */
 :root {
   --main-font: "Roboto", "Relaway", sans-serif;
-  --contact-foter-color: rgba(255, 255, 255, 0.6);
   --bg-color: #f5f4fa;
-  --icon-color: #AFB1B8;
-  --bg-color-modal: rgba(0, 0, 0, 0.2);
-  --bg-foter-icons: rgba(255, 255, 255, 0.1);
-  --border-modal-color: rgba(0, 0, 0, 0.1);
   --text-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -368,10 +363,10 @@ h2 {
   margin: 0px;
   width: 170px;
   height: 92px;
-  fill: var(--icon-color);
+  fill: #AFB1B8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid var(--icon-color);
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
   -webkit-transition-property: border-color, fill;
   transition-property: border-color, fill; /* transition */
@@ -454,7 +449,7 @@ h2 {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--contact-foter-color);
+  color: rgba(255, 255, 255, 0.6);
   -webkit-transition-property: color;
   transition-property: color; /* transition */
   -webkit-transition-duration: 250ms;
@@ -472,7 +467,7 @@ h2 {
 .foter__icon { /* svg */
   fill: #ffffff;
   border-radius: 50%;
-  background-color: var(--bg-foter-icons);
+  background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition-property: background-color;
   transition-property: background-color; /* transition */
   -webkit-transition-duration: 250ms;
@@ -505,7 +500,7 @@ h2 {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--contact-foter-color);
+  color: rgba(255, 255, 255, 0.6);
   width: 358px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -533,7 +528,7 @@ h2 {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: var(--bg-color-modal);
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(0);
           transform: translateY(0); /* transformation */
   -webkit-transition-duration: 250ms;
@@ -567,7 +562,7 @@ h2 {
   right: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--border-modal-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;

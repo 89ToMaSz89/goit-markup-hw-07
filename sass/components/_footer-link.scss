@@ -6,7 +6,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 
-    color: var(--contact-foter-color);
+    color: $foterContactColor;
 
     transition-property: color;     /* transition */
     transition-duration: 250ms;
