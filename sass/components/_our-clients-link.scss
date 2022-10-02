@@ -1,0 +1,8 @@
+.our-clients__link{
+    &:focus{
+        & .our-clients__icon{
+            fill: $mainColor;
+            border-color: $mainColor;
+        }
+    }
+}

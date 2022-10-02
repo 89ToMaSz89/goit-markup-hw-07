@@ -1,16 +1,3 @@
-.header-navigation__link--underline::after{     /* PSEUDO CLASS ::AFTER */
-    margin: 0px;
-    margin-top: 36px;
-
-    content: "";
-    background-color: $mainColor;
-    padding: 2px 26.5px;
-    border-radius: 2px;
-
-    display: block;
-    position: absolute;
-}
-
 .header-navigation__link{
 color: $secondaryColor;
 text-decoration: none;
@@ -22,7 +9,20 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus,
 &:active{
-color: $mainColor;
+    color: $mainColor;
 }
+}
+
+.header-navigation__link--underline::after{     /* PSEUDO CLASS ::AFTER */
+    margin: 0px;
+    margin-top: 36px;
+
+    content: "";
+    background-color: $mainColor;
+    padding: 2px 26.5px;
+    border-radius: 2px;
+
+    display: block;
+    position: absolute;
 }
 

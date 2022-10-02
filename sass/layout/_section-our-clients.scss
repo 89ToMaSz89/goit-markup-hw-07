@@ -15,17 +15,25 @@
     transition-property: border-color, fill;    /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        fill: $mainColor;
+        border-color: $mainColor;
+
+        & .our-clients__icon{
+            fill: $mainColor;
+            border-color: $mainColor;
+        }   
+    }
 }
 
-.our-clients__icon:hover{
-    fill: $mainColor;
-    border-color: $mainColor;
-}
 
-.our-clients__item > a:focus .our-clients__icon{
-    fill: $mainColor;
-    border-color: $mainColor;
-}
+
+// .our-clients__item > a:focus .our-clients__icon{
+//     fill: $mainColor;
+//     border-color: $mainColor;
+// }
 
 .our-clients__list--distance{
     padding-top: 50px;
