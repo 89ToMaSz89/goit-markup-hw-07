@@ -1,9 +1,4 @@
 /* *************SECTION NO.1 - OUR STRENGTHS ************ */
-
-.ssection-overlay{
-    background-color: var(--bg-color);
-}
-
 .our-strengths__list,       /* ### Section - our strengths ### */
 .our-job__list,             /* ### Section - our job ### */
 .our-team__list,            /* ### Section - our team ### */
@@ -20,6 +15,10 @@
     color: $secondaryColor;
 }
 
+.ssection-overlay{
+    background-color: var(--bg-color);
+}
+
 .our-strengths__list--distance{
     padding-top: 94px;
 }
@@ -31,7 +30,7 @@
     border-radius: 4px;
 }
 
-.our-strengths__list .our-strengths__paragraph{ /* paragraph */
+.our-strengths__paragraph{ /* paragraph */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;

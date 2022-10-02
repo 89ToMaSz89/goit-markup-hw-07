@@ -191,10 +191,6 @@ h2 {
 }
 
 /* *************SECTION NO.1 - OUR STRENGTHS ************ */
-.ssection-overlay {
-  background-color: var(--bg-color);
-}
-
 .our-strengths__list,
 .our-job__list,
 .our-team__list,
@@ -213,6 +209,10 @@ h2 {
   color: #212121;
 }
 
+.ssection-overlay {
+  background-color: var(--bg-color);
+}
+
 .our-strengths__list--distance {
   padding-top: 94px;
 }
@@ -223,7 +223,7 @@ h2 {
   border-radius: 4px;
 }
 
-.our-strengths__list .our-strengths__paragraph { /* paragraph */
+.our-strengths__paragraph { /* paragraph */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -308,29 +308,6 @@ h2 {
           box-shadow: none;
 }
 
-.our-team__icon {
-  fill: #AFB1B8;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  -webkit-transition-property: background-color, fill;
-  transition-property: background-color, fill; /* transition */
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-team__icon:hover {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-
-.our-team__item > a:focus .icons {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
 /* ************* SECTION NO.4 - OUR CLIENTS *************** */
 .our-clients__icon { /* svg */
@@ -348,14 +325,6 @@ h2 {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.our-clients__icon:hover, .our-clients__icon:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
-}
-.our-clients__icon:hover .our-clients__icon, .our-clients__icon:focus .our-clients__icon {
-  fill: #2196f3;
-  border-color: #2196f3;
 }
 
 .our-clients__list--distance {
@@ -422,12 +391,6 @@ h2 {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition-property: color;
-  transition-property: color; /* transition */
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foter__link:hover, .foter__link:focus {
   color: #2196f3;
@@ -944,4 +907,34 @@ h2 {
 }
 .heading__btn:hover, .heading__btn:focus {
   cursor: pointer;
+}
+
+.our-clients__link:hover, .our-clients__link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.our-clients__link:hover .our-clients__icon, .our-clients__link:focus .our-clients__icon {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
+.our-team__icon {
+  fill: #AFB1B8;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  -webkit-transition-property: fill;
+  transition-property: fill; /* transition */
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team__link:hover, .our-team__link:focus {
+  fill: #ffffff;
+}
+.our-team__link:hover .our-team__icon, .our-team__link:focus .our-team__icon {
+  background-color: #2196f3;
+  fill: #ffffff;
 }/*# sourceMappingURL=main.css.map */

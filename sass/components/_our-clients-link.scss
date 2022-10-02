@@ -1,8 +1,12 @@
 .our-clients__link{
-    &:focus{
+   &:hover,
+   &:focus{
+    fill:  $mainColor;
+    border-color: $mainColor;
+
         & .our-clients__icon{
-            fill: $mainColor;
+            fill:  $mainColor;
             border-color: $mainColor;
         }
-    }
+   }
 }

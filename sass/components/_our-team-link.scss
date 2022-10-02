@@ -1,0 +1,11 @@
+.our-team__link{
+    &:hover,
+    &:focus{
+        fill: $fourthColor;
+
+        & .our-team__icon{
+            background-color: $mainColor;
+            fill: $fourthColor;
+        }
+    }
+}
