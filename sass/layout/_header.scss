@@ -1,5 +1,5 @@
 .main-head-border-bottom{
-    border-bottom: 1px solid var(--border-main-head-color);
+    border-bottom: 1px solid $borderHeadColor;
 }
 
 .main-head{
@@ -9,5 +9,5 @@
 
     padding: 32px 0px;
 
-    background-color: var(--text-btn-color);
+    background-color: $fourthColor;
 }

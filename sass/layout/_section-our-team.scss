@@ -9,7 +9,7 @@
 
     border-radius: 0px 0px 4px 4px;
 
-    background-color: var(--text-btn-color);
+    background-color: $fourthColor;
 }
 
 .our-team__list--distance{
@@ -70,12 +70,12 @@
 
 .our-team__icon:hover{
     background-color: $mainColor;
-    fill: var(--text-btn-color);
+    fill: $fourthColor;
 }
 
 .our-team__item > a:focus .icons{
     background-color: $mainColor;
-    fill: var(--text-btn-color);
+    fill: $fourthColor;
 }
 
 /* ************ END SECTION NO.3 - OUR TEAM *************** */

@@ -1,10 +1,6 @@
 /* *************** VARIABLES *************** */
 :root {
   --main-font: "Roboto", "Relaway", sans-serif;
-  --text-btn-color: #ffffff;
-  --main-background-color: #2f303a;
-  --border-card-color: #eeeeee;
-  --border-main-head-color: #ececec;
   --contact-foter-color: rgba(255, 255, 255, 0.6);
   --bg-color: #f5f4fa;
   --icon-color: #AFB1B8;
@@ -66,7 +62,7 @@ h2 {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--text-btn-color);
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -88,7 +84,7 @@ h2 {
 }
 
 .main-head-border-bottom {
-  border-bottom: 1px solid var(--border-main-head-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .main-head {
@@ -101,7 +97,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 32px 0px;
-  background-color: var(--text-btn-color);
+  background-color: #ffffff;
 }
 
 .header-navigation__list { /* ### Menu navigation ### */
@@ -185,7 +181,7 @@ h2 {
 }
 
 .heading-overlay {
-  background-color: var(--main-background-color);
+  background-color: #2f303a;
 }
 
 .heading__title {
@@ -196,7 +192,7 @@ h2 {
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-btn-color);
+  color: #ffffff;
 }
 
 .heading__btn {
@@ -211,7 +207,7 @@ h2 {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-btn-color);
+  color: #ffffff;
   padding: 10px 41px 10px 42px;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -288,7 +284,7 @@ h2 {
   line-height: 1.143;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-btn-color);
+  color: #ffffff;
 }
 
 .our-job__list--distance {
@@ -302,7 +298,7 @@ h2 {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--text-btn-color);
+  background-color: #ffffff;
 }
 
 .our-team__list--distance {
@@ -358,12 +354,12 @@ h2 {
 
 .our-team__icon:hover {
   background-color: #2196f3;
-  fill: var(--text-btn-color);
+  fill: #ffffff;
 }
 
 .our-team__item > a:focus .icons {
   background-color: #2196f3;
-  fill: var(--text-btn-color);
+  fill: #ffffff;
 }
 
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
@@ -401,7 +397,7 @@ h2 {
 
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
 .foter-overlay {
-  background-color: var(--main-background-color);
+  background-color: #2f303a;
 }
 
 .foter {
@@ -440,7 +436,7 @@ h2 {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--text-btn-color);
+  color: #ffffff;
   margin-top: 9px;
 }
 
@@ -449,7 +445,7 @@ h2 {
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.03em;
-  color: var(--text-btn-color);
+  color: #ffffff;
 }
 
 .foter__link { /* contact links */
@@ -474,7 +470,7 @@ h2 {
 }
 
 .foter__icon { /* svg */
-  fill: var(--text-btn-color);
+  fill: #ffffff;
   border-radius: 50%;
   background-color: var(--bg-foter-icons);
   -webkit-transition-property: background-color;
@@ -511,7 +507,7 @@ h2 {
   letter-spacing: 0.03em;
   color: var(--contact-foter-color);
   width: 358px;
-  background-color: var(--main-background-color);
+  background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
@@ -554,7 +550,7 @@ h2 {
           transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: var(--text-btn-color);
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -573,7 +569,7 @@ h2 {
   height: 30px;
   border: 1px solid var(--border-modal-color);
   border-radius: 50%;
-  background-color: var(--text-btn-color);
+  background-color: #ffffff;
   cursor: pointer;
   -webkit-transition-property: border-color, fill;
   transition-property: border-color, fill;
@@ -721,7 +717,7 @@ h2 {
   position: absolute;
   width: 11px;
   height: 8px;
-  fill: var(--text-btn-color);
+  fill: #ffffff;
   -webkit-transform: translateX(-200%);
           transform: translateX(-200%);
 }
@@ -752,7 +748,7 @@ h2 {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-btn-color);
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -809,7 +805,7 @@ h2 {
 }
 .menu__btn:hover, .menu__btn:focus {
   background-color: #2196f3;
-  color: var(--text-btn-color);
+  color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -851,8 +847,8 @@ h2 {
 }
 
 .project-card__item {
-  border-bottom: 1px solid var(--border-card-color);
-  background-color: var(--text-btn-color);
+  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -891,7 +887,7 @@ h2 {
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
-  color: var(--text-btn-color);
+  color: #ffffff;
 }
 
 .foter__btn {
@@ -910,7 +906,7 @@ h2 {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--text-btn-color);
+  color: #ffffff;
   background-color: #2196f3;
   border: 0px;
   border-radius: 4px;
@@ -934,7 +930,7 @@ h2 {
   width: 24px;
   height: 24px;
   margin-left: 24px;
-  fill: var(--text-btn-color);
+  fill: #ffffff;
 }
 
 .header-navigation__link--underline::after { /* PSEUDO CLASS ::AFTER */

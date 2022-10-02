@@ -26,7 +26,7 @@
     width: 528px;
     height: 581px;
 
-    background-color: var(--text-btn-color);
+    background-color: $fourthColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@
 
     border: 1px solid var(--border-modal-color);
     border-radius: 50%;
-    background-color: var(--text-btn-color);
+    background-color: $fourthColor;
 
     cursor: pointer;
 
@@ -202,7 +202,7 @@
     width: 11px;
     height: 8px;
 
-    fill: var(--text-btn-color);
+    fill: $fourthColor;
 
     transform: translateX(-200%);
 }
@@ -235,7 +235,7 @@
 
     letter-spacing: 0.06em;
 
-    color: var(--text-btn-color);
+    color: $fourthColor;
 
     cursor: pointer;
 }

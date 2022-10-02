@@ -1,5 +1,5 @@
 .foter-overlay{
-    background-color: var(--main-background-color);
+    background-color: $mainBgColor;
 }
 
 .foter{
@@ -35,7 +35,7 @@
 
     letter-spacing: 0.03em;
 
-    color: var(--text-btn-color);
+    color: $fourthColor;
 
     margin-top: 9px;
 }
@@ -46,6 +46,6 @@
     line-height: 1.143px;
     letter-spacing: 0.03em;
 
-    color: var(--text-btn-color);
+    color: $fourthColor;
     
 }

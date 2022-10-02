@@ -17,7 +17,7 @@
 }
 
 .heading-overlay{
-    background-color: var(--main-background-color);
+    background-color: $mainBgColor;
 }
 
 .heading__title{
@@ -31,7 +31,7 @@
     text-align: center;
     letter-spacing: 0.06em; 
 
-    color: var(--text-btn-color);
+    color: $fourthColor;
 }
 
 .heading__btn{
@@ -50,7 +50,7 @@
     text-align: center;
     letter-spacing: 0.06em;
 
-    color: var(--text-btn-color);
+    color: $fourthColor;
 
     padding: 10px 41px 10px 42px;
 

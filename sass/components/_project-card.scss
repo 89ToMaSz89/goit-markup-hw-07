@@ -43,8 +43,8 @@
 } 
 
 .project-card__item{
-    border-bottom: 1px solid var(--border-card-color);
-    background-color: var(--text-btn-color);
+    border-bottom: 1px solid $borderCardColor;
+    background-color: $fourthColor;
 
     transition-property: box-shadow;    /* transition */
     transition-duration: 250ms;

@@ -15,7 +15,7 @@
 
     letter-spacing: 0.06em;
 
-    color: var(--text-btn-color);   
+    color: $fourthColor;   
     background-color: $mainColor;
 
     border: 0px;
@@ -40,6 +40,6 @@
 
     margin-left: 24px;
 
-    fill: var(--text-btn-color);
+    fill: $fourthColor;
 }
 
