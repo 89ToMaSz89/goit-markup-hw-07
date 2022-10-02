@@ -1,22 +1,3 @@
-/* ******************** WINDOW MODAL *********************** */
-
-.backdrop{
-    position: fixed;
-
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-
-    background-color: $modalBgColor;
-
-    transform: translateY(0);       /* transformation */
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
 .modal{
     position: absolute;
     top: 50%;
@@ -33,9 +14,16 @@
     border-radius: 4px;
 }
 
-.modal > a:hover .modal__icon{
-    fill: $mainColor;
-    border-color: $mainColor;
+.modal__head{
+    margin-top: 40px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $secondaryColor;
 }
 
 .modal__icon{
@@ -55,18 +43,11 @@
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__head{
-    margin-top: 40px;
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: $secondaryColor;
+    &:hover{
+        border-color: $mainColor;
+        fill: $mainColor;
+    }
 }
 
 .modal-form{           /* ### form ### */
@@ -108,22 +89,6 @@
    outline: none;
 }
 
-.modal-form__icon{
-    position: absolute;
-
-    width: 18px;
-    height: 18px;
-
-    margin-top: 12px;
-    margin-left: 15px;
-
-    fill: $secondaryColor;
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-form__field--border{
     margin: 0px;
     resize: none;
@@ -135,20 +100,6 @@
     border-radius: 4px;
 
     outline: none;
-}
-
-.modal-form__name > a:hover .modal-form__icon,
-.modal-form__name > a:hover .modal-form__field,
-.modal-form__field:hover{
-    border-color: $mainColor;
-    fill: $mainColor;
-}
-
-.modal-form__name > a:focus-within .modal-form-icons,
-.modal-form__name > a:focus-within .modal-form-input,
-.modal-form__field:focus-within{
-    border-color: $mainColor;
-    fill: $mainColor;
 }
 
 .modal-form__chack-name{                /*checkbox*/
@@ -181,9 +132,7 @@
     margin-left: 7px;
 }
 
-.modal-form__link{
-    color: $mainColor;
-}
+
 
 .modal-form__check-frame{
     position: absolute;
@@ -196,6 +145,58 @@
     border-radius: 2px;
 }
 
+.modal-form__link{
+    color: $mainColor;
+    &:hover{
+       
+        & .modal-form__icon{
+            fill: $mainColor;
+        }
+        & .modal-form__field{
+            border-color: $mainColor;
+        }
+    }
+}
+
+.modal-form__icon{
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    margin-top: 12px;
+    margin-left: 15px;
+
+    fill: $secondaryColor;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__field{
+    &:hover{
+        border-color: $mainColor;
+    }
+}
+
+.modal-form__check{
+    &:checked{
+        
+         ~.modal-form__check-frame{
+        background-color: $mainColor;
+        border-color: $mainColor;
+            
+        & .modal-form__check-icon{
+            transform: translateX(0);
+                background-color: $mainColor;
+                border-color: $mainColor;
+        }
+        }
+        
+    }
+}
+
 .modal-form__check-icon{
     position: absolute;
 
@@ -205,13 +206,6 @@
     fill: $fourthColor;
 
     transform: translateX(-200%);
-}
-
-.modal-form__check:checked ~ .modal-form__check-frame > .modal-form__check-icon,
-.modal-form__check:checked ~ .modal-form__check-frame{
-    transform: translateX(0);
-    background-color: $mainColor;
-    border-color: $mainColor;
 }
 
 .modal-form__btn{
@@ -238,11 +232,9 @@
     color: $fourthColor;
 
     cursor: pointer;
-}
 
-.modal-form__btn:hover,
-.modal-form__btn:focus{
+    &:hover,
+    &:focus{
     opacity: 0.5;
 }
-
-/* ******************* END WINDOW MODAL ******************* */
+}
