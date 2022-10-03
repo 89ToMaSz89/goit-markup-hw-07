@@ -16,28 +16,49 @@
                 /* ### Heading ### */
 
 @import "./layout/heading";
+@import "./components/heading-btn";
+
+                /* ### Our-strengths ### */
 
 @import "./layout/section-our-strengths";
+
+                /* ### Our-job ### */
+
 @import "./layout/section-our-job";
+
+                /* ### Our-team ### */
+
 @import "./layout/section-our-team";
+@import "./components/our-team-icon";
+
+                /* ### Our-clients ### */
+
 @import "./layout/section-our-clients";
+@import "./components/our-clients-icon";
+
+                /* ### Menu ### */
+
+@import "./components/menu";
+
+
+
 @import "./layout/footer";
 @import "./components/footer-link";
 @import "./components/footer-icon";
 @import "./components/footer-form";
-@import "./layout/menu";
+
 @import "./layout/projects";
 @import "./utils/is-hidden";
-@import "./components/menu-btn";
+
 @import "./components/project-card";
 @import "./components/project-card-description-box";
 @import "./components/footer-btn";
 
-@import "./components/heading-btn";
-@import "./components/our-clients-link";
+
+
 // @import "./base/section-position";
-@import "./components/our-team-icon";
-@import "./components/our-team-link";
+
+
 @import "./components/backdrop";
 @import "./components/window-modal";
 // @import "./components/window-modal-icon";

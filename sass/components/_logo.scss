@@ -1,4 +1,4 @@
-.main-head__logo{           /* ### Logo ### */
+.main-head__logo{           /* ### Logo - header ### */
     margin: 0px;
     
     font-family: 'Raleway';
@@ -11,13 +11,13 @@
 
     color: $secondaryColor;
     text-decoration: none;
+
+    &--color{
+        color: $mainColor;
+    }
 }
 
-.main-head__logo--color{
-    color: $mainColor;
-}
-
-.foter__logo{           /* ### Logo ### */
+.foter__logo{           /* ### Logo - footer ### */
     
     font-family: 'Raleway';
     font-style: normal;
@@ -29,8 +29,9 @@
 
     color: $fourthColor;
     text-decoration: none;
+
+    &--color{
+        color: $mainColor;
+    }
 }
 
-.foter__logo--color{
-    color: $mainColor;
-}

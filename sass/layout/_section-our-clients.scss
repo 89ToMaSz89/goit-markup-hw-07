@@ -1,24 +1,20 @@
 /* ************* SECTION NO.4 - OUR CLIENTS *************** */
 
-.our-clients__icon{     /* svg */
-    margin: 0px;
+.our-clients__list{           
+    display: flex;
+    align-items:center;
+    gap: 30px;
 
-    width: 170px;
-    height: 92px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
 
-    fill: $iconColor;
+    color: $secondaryColor;
 
-    box-sizing: border-box;
-    border: 1px solid $iconColor;
-    border-radius: 4px;
-
-    transition-property: border-color, fill;    /* transition */
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-clients__list--distance{
-    padding-top: 50px;
+    &--distance{
+        padding-top: 50px;
+    }
 }
 
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
