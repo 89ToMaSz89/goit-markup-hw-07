@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/is-hidden";
 
                 /* ### Base ### */
 
@@ -52,32 +53,12 @@
 @import "./components/footer-icon";
 @import "./components/footer-form";
 
-
-// @import "./components/footer-form";
-
-
-@import "./utils/is-hidden";
-
-
-
-
-
-
-
-
-
-// @import "./base/section-position";
-
+                /* ### Backdrop ### */
 
 @import "./components/backdrop";
+
+                /* ### Window modal ### */
+
 @import "./components/window-modal";
-// @import "./components/window-modal-icon";
-// @import "./components/window-modal-form";
-// @import "./components/window-modal-form-icon";
-// @import "./components/window-modal-form-field.scss";
-// @import "./components/window-modal-form-link";
-// @import "./components/window-modal-form-btn";
-// @import "./components/window-modal-form-check-icon";
-// @import "./components/window-modal-form-check";
-// @import "./components/window-modal-form-check-frame";
+
 

@@ -6,6 +6,18 @@
 }
 
 /* ########################################### */
+.is-hidden {
+  visibility: hidden;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); /* transformation */
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ### Base ### */
 /* *************** GLOBAL SETTINGS  *************** */
 body {
@@ -687,8 +699,7 @@ h2 {
 .foter__form {
   margin: 0px;
 }
-
-.foter__field-email {
+.foter__form .foter__field-email {
   position: absolute;
   left: 0px;
   top: 52px;
@@ -703,8 +714,7 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
-
-.foter__btn {
+.foter__form .foter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,7 +742,7 @@ h2 {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.foter__btn:hover, .foter__btn:focus {
+.foter__form .foter__btn:hover, .foter__form .foter__btn:focus {
   cursor: pointer;
   opacity: 0.5;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -746,18 +756,7 @@ h2 {
   fill: #ffffff;
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%); /* transformation */
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+/* ### Backdrop ### */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -773,6 +772,7 @@ h2 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ### Window modal ### */
 .modal {
   position: absolute;
   top: 50%;
