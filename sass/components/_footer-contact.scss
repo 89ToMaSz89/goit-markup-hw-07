@@ -1,4 +1,4 @@
-.foter__link{           /* contact links */
+.foter__link{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -8,10 +8,13 @@
 
     color: $foterContactColor;
 
+    transition-property: color;     /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus{
     color: $mainColor;
 }
 }
 
-    

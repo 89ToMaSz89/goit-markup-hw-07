@@ -1,14 +1,13 @@
-.foter__icon{                       /* svg */
+.foter__icons{          /* svg */
     fill: $fourthColor;
 
     border-radius: 50%;
     background-color: $foterBgIconColor;
 
-    transition-property: background-color;  /* transition */
+    transition-property: background-color;      /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .foter__link{           
     font-weight: 400;
@@ -22,9 +21,9 @@
 
     &:hover,
     &:focus{
-        
-        & .foter__icon{
+    
+        & .foter__icons{
         background-color: $mainColor;
+        }
     }
-}
 }
