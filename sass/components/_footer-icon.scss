@@ -10,4 +10,21 @@
 }
 
 
+.foter__link{           
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: $foterContactColor;
+
+    &:hover,
+    &:focus{
+        
+        & .foter__icon{
+        background-color: $mainColor;
+    }
+}
+}

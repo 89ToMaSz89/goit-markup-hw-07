@@ -40,19 +40,28 @@
 
 @import "./components/menu";
 
-
-
-@import "./layout/footer";
-@import "./components/footer-link";
-@import "./components/footer-icon";
-@import "./components/footer-form";
+                /* ### Projects ### */
 
 @import "./layout/projects";
+@import "./components/project-card";
+
+                /* ### Footer ### */
+
+@import "./layout/footer";
+@import "./components/footer-contact";
+@import "./components/footer-icon";
+
+
+@import "./components/footer-form";
+
+
 @import "./utils/is-hidden";
 
-@import "./components/project-card";
-@import "./components/project-card-description-box";
-@import "./components/footer-btn";
+
+
+
+
+
 
 
 

@@ -14,17 +14,21 @@
 
     margin-right: 70px;
     padding-top: 20px;
+
+    &--collocation{
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    &--collocation-social{
+        gap: 10px;
+        margin: 0px;
+    }
 }
 
-.foter__list--collocation{
-    flex-direction: column;
-    gap: 9px;
-}
 
-.foter__list--collocation-social{
-    gap: 10px;
-    margin: 0px;
-}
+
+
 
 .foter__item{
     font-family: 'Roboto';
