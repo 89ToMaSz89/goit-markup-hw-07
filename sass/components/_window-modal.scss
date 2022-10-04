@@ -13,6 +13,16 @@
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+    &__head {
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+      }
+
     & .modal-form{           /* ### form ### */
         position: absolute;
         display: flex;
@@ -34,23 +44,29 @@
         
             color: $thirdColor;
         }
-    
-        & .modal-form__check-icon{
-            position: absolute;
+
+        & .modal-form__chack-name{                /*checkbox*/
+            position: relative;
+            left: 13px;
+            top: 10px;
         
-            width: 11px;
-            height: 8px;
+            display: flex;
+            align-items: center;
         
-            fill: $fourthColor;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
         
-            transform: translateX(-200%);
+            letter-spacing: 0.03em;
+        
+            color: $thirdColor;
+        
+            overflow: hidden;
         }
     }
 }
 
-
-
-.modal__icon{
+.modal__icon{           /* svg */
     position: absolute;
     top: 8px;
     right: 8px;
@@ -74,73 +90,25 @@
     }
 }
 
+.modal-form__check-frame{       /* frame of checkbox */
+    position: absolute;
+    padding-top: 2px;
 
+    width: 16px;
+    height: 15px;
 
+    border: 2px solid black;
+    border-radius: 2px;
 
-
-.modal-form__field{
-    width: 448px;
-   height: 40px;
-
-   padding-left: 42px;
-
-   border: 1px solid rgba(33, 33, 33, 0.2);
-   border-radius: 4px;
-
-   transition-property: border-color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-   outline: none;
-}
-
-.modal-form__field--border{
-    margin: 0px;
-    resize: none;
-    padding: 12px 16px;
-
-    height: 120px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
-    outline: none;
-}
-
-.modal-form__chack-name{                /*checkbox*/
-    position: relative;
-    left: 13px;
-    top: 10px;
-
-    display: flex;
-    align-items: center;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.03em;
-
-    color: $thirdColor;
-
-    overflow: hidden;
-}
-
-.modal-form__check{
-    margin: 0px;
-    padding: 0px;
-
-    opacity: 0;
-
-    &-frame{
+    & .modal-form__check-icon{
         position: absolute;
-        padding-top: 2px;
     
-        width: 16px;
-        height: 15px;
+        width: 11px;
+        height: 8px;
     
-        border: 2px solid black;
-        border-radius: 2px;
+        fill: $fourthColor;
+    
+        transform: translateX(-200%);
     }
 }
 
@@ -150,7 +118,8 @@
 
 .modal-form__link{
     color: $mainColor;
-    &:hover{
+    &:hover,
+    &:focus-within{
        
         & .modal-form__icon{
             fill: $mainColor;
@@ -177,15 +146,45 @@
     }
 }
 
-.modal-form__field{
-    &:hover{
-        border-color: $mainColor;
-    }
+.modal-form__field{         /* field of form */
+    width: 448px;
+    height: 40px;
+
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
+    
+        &:hover{
+             border-color: $mainColor;
+        }
 }
 
+.modal-form__field--border{     /* filed of comment */
+    margin: 0px;
+    resize: none;
+    padding: 12px 16px;
 
+    height: 120px;
 
-.modal-form__check{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: none;
+}
+
+.modal-form__check{         /* svg - checkbox */
+    margin: 0px;
+    padding: 0px;
+
+    opacity: 0;   
+
     &:checked{
         
          ~.modal-form__check-frame{
@@ -202,9 +201,7 @@
     }
 }
 
-
-
-.modal-form__btn{
+.modal-form__btn{       /* button */
     position: absolute;
     left: 164px;
     top: 420px;
@@ -229,8 +226,11 @@
 
     cursor: pointer;
 
-    &:hover,
-    &:focus{
-    opacity: 0.5;
+        &:hover,
+        &:focus{
+        opacity: 0.5;
+    }
 }
-}
+
+
+
